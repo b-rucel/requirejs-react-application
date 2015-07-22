@@ -6,16 +6,16 @@ use bower:
 
     npm install -g bower
 
+*.bowerrc*
 ---
 
-    .bowerrc
     {
         "directory": "vendor"
     }
 
+*bower.json*
 ---
 
-    bower.json
     {
         "name": "webapp",
         "version": "0.0.1",
@@ -34,14 +34,19 @@ use bower:
         }
     }
 
+*run bower install*
 ---
 
     bower install bootstrap less font-awesome backbone-amd lodash jquery requirejs react --save
 
+
+*tree command*
 ---
 
     tree -d -L 2
 
+
+*tree output*
 ---
 
     ROOT/
@@ -92,6 +97,8 @@ use bower:
         └── react
             └── jsx.js <-- this file is not part of bower build
 
+
+*index.html - entry point to webapp*
 ---
 
     <!doctype html>
