@@ -1,5 +1,4 @@
 # requirejs-react-application
-web application start kit
 
 web application build stack
 
@@ -7,10 +6,14 @@ use bower:
 
     npm install -g bower
 
+---
+
     .bowerrc
     {
         "directory": "vendor"
     }
+
+---
 
     bower.json
     {
@@ -31,11 +34,15 @@ use bower:
         }
     }
 
+---
+
     bower install bootstrap less font-awesome backbone-amd lodash jquery requirejs react --save
+
+---
 
     tree -d -L 2
 
-
+---
 
     ROOT/
         public/
@@ -53,7 +60,7 @@ use bower:
             .bowerrc
             index.php
 
-
+---
 
     tree -d -L 2:
     public
@@ -85,6 +92,7 @@ use bower:
         └── react
             └── jsx.js <-- this file is not part of bower build
 
+---
 
     <!doctype html>
     <html lang="en">
